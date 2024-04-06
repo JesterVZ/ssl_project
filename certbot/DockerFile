@@ -1,7 +1,7 @@
 # Dockerfile
 FROM ubuntu:22.04
 
-EXPOSE 6000 81
+EXPOSE 80 80
 
 # читаем переменные среды из .env
 ARG DOMAIN_EMAIL

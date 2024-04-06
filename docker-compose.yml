@@ -10,12 +10,12 @@ services:
       - ./nginx/cert.pem:/etc/cert.pem
       - ./nginx/key.pem:/etc/key.pem
     ports:
-      - "81:81"
+      - "80:80"
       - "443:443"
 
   certbot:
     ports:
-      - "6000:81"
+      - "80:80"
     env_file:
       - .env
     # и снова мониторуем директорию nginx
